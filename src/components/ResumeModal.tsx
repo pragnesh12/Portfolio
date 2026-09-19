@@ -51,8 +51,8 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
   const handleCopyBlurb = () => {
     const blurb = `Pragnesh Rana — Full Stack Developer
-- Experience: Nyusoft Solutions (Full Stack Web Apps, TypeScript, Next.js, Node.js, PostgreSQL, Prisma, Docker, AWS, pnpm Monorepos, Internal AI tooling mentorship)
-- Key Projects at Nyusoft: EyeNeedADoc (Healthcare Staffing Marketplace with Stripe Connect & DocuSign), Property Proof (AI Asset Provenance with Gemini 2.5 Flash), PassFCPS (24-module Monorepo Exam Platform)
+- Professional Experience: Full Stack Web Apps, TypeScript, Next.js, Node.js, PostgreSQL, Prisma, Docker, AWS, pnpm Monorepos, Internal AI tooling leadership
+- Key Projects: EyeNeedADoc (Healthcare Staffing Marketplace with Stripe Connect & DocuSign), Property Proof (AI Asset Provenance with Gemini 2.5 Flash), PassFCPS (24-module Monorepo Exam Platform)
 - Education: Bachelor of Computer Applications (BCA) at Silver Oak University — 9.73 CGPA
 - Location: Ahmedabad, Gujarat, India | Email: heypragnesh@gmail.com | Phone: +91 7485946310
 - LinkedIn: https://linkedin.com/in/hey-pragnesh`;
@@ -72,12 +72,12 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         aria-labelledby="modal-headline"
       >
         {/* Modal Top Toolbar (Screen Only, Hidden When Printing) */}
-        <div className="px-5 py-3.5 bg-zinc-950 text-white flex flex-wrap items-center justify-between gap-3 border-b border-zinc-800 no-print">
+        <div className="px-5 py-3.5 bg-[#0B0F0D] text-white flex flex-wrap items-center justify-between gap-3 border-b border-[#232B26] no-print">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-sm text-white">
+            <span className="font-bold text-sm text-[#EAEAEA]">
               Resume View
             </span>
-            <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-zinc-800 text-zinc-300">
+            <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#34D399]/10 text-[#34D399] border border-[#34D399]/30">
               Clean Monochrome ATS Format
             </span>
           </div>
@@ -85,15 +85,15 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           <div className="flex items-center gap-2">
             <button
               onClick={handleCopyBlurb}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-xs font-medium text-white transition-colors"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#141816] hover:bg-[#1A201D] text-xs font-semibold text-[#EAEAEA] border border-[#232B26] transition-colors cursor-pointer"
             >
-              {copiedBlurb ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+              {copiedBlurb ? <Check className="w-3.5 h-3.5 text-[#34D399]" /> : <Copy className="w-3.5 h-3.5" />}
               <span>{copiedBlurb ? 'Copied' : 'Copy Summary'}</span>
             </button>
 
             <button
               onClick={handlePrint}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white text-black hover:bg-zinc-200 text-xs font-bold transition-all shadow-sm"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-[#34D399] hover:bg-[#34D399]/90 text-[#0B0F0D] text-xs font-bold transition-all shadow-sm cursor-pointer"
             >
               <Printer className="w-3.5 h-3.5" />
               <span>Print / Save PDF</span>
@@ -101,7 +101,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <button
               onClick={onClose}
-              className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors ml-1"
+              className="p-1.5 rounded-lg text-[#8B8F8D] hover:text-[#EAEAEA] hover:bg-[#1A201D] transition-colors ml-1 cursor-pointer"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -131,8 +131,6 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               <a href={PERSONAL_INFO.linkedinUrl} target="_blank" rel="noreferrer" className="hover:underline">
                 {PERSONAL_INFO.linkedinUrl}
               </a>
-              <span>&bull;</span>
-              <span>Nyusoft Solutions</span>
             </div>
           </div>
 
@@ -142,7 +140,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Professional Summary
             </h2>
             <p className="text-xs text-zinc-800 leading-relaxed">
-              Full Stack Developer with production experience in JavaScript, TypeScript, React, Next.js, Node.js, and PostgreSQL, plus Docker and monorepo architectures. Skilled in architecting and deploying scalable web apps on AWS, and applying AI-assisted development in a structured, deliberate way while internally helping coordinate AI developer workflows and team mentorship as AI Vice Captain at Nyusoft Solutions.
+              Full Stack Developer with production experience in JavaScript, TypeScript, React, Next.js, Node.js, and PostgreSQL, plus Docker and monorepo architectures. Skilled in architecting and deploying scalable web apps on AWS, and applying AI-assisted development in a structured, deliberate way while internally coordinating AI developer workflows and team mentorship as AI Vice Captain.
             </p>
           </section>
 
@@ -196,10 +194,10 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </div>
           </section>
 
-          {/* Projects at Nyusoft */}
+          {/* Projects */}
           <section className="mt-5">
             <h2 className="text-sm font-extrabold text-zinc-950 uppercase tracking-wider border-b border-zinc-300 pb-1 mb-2">
-              Key Projects (Engineered at Nyusoft Solutions)
+              Key Projects (Featured Production Work)
             </h2>
             <div className="space-y-3">
               {PROJECTS.map((proj) => (

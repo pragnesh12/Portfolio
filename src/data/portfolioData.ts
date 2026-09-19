@@ -12,7 +12,7 @@ export const PERSONAL_INFO = {
   githubHandle: 'pragnesh12',
   portfolioUrl: 'https://pragnesh-portfolio.netlify.app',
   summary:
-    'Full Stack Developer with production experience in JavaScript, TypeScript, React, Next.js, Node.js, and PostgreSQL, plus Docker and monorepo architectures. Skilled in architecting scalable web apps on AWS, and coordinating internal AI developer tooling workflows as AI Vice Captain within our engineering team at Nyusoft Solutions.',
+    'Full Stack Developer with production experience in JavaScript, TypeScript, React, Next.js, Node.js, and PostgreSQL, plus Docker and monorepo architectures. Skilled in architecting scalable web apps on AWS, and coordinating internal AI developer tooling workflows as AI Vice Captain.',
   availabilityStatus: 'Open to High-Impact Full-Stack Opportunities',
   experienceYears: '2+ Years Production Experience',
   cgpa: '9.73 CGPA',
@@ -21,7 +21,7 @@ export const PERSONAL_INFO = {
 export const HIGHLIGHT_METRICS = [
   { label: 'Academic Distinction', value: '9.73 CGPA', detail: 'Silver Oak University (BCA)' },
   { label: 'Backend & System Modules', value: '24+ Modules', detail: 'pnpm monorepo architecture' },
-  { label: 'Team Mentorship', value: 'AI Vice Captain', detail: 'Internal team role at Nyusoft' },
+  { label: 'Developer Productivity', value: 'AI Vice Captain', detail: 'Token efficiency & tooling mentorship' },
   { label: 'Core Stack', value: 'TS + Next.js + Node', detail: 'PostgreSQL, Docker, AWS' },
 ];
 
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     category: 'Full-Stack',
     featured: true,
     description:
-      'A high-performance two-sided marketplace engineered at Nyusoft Solutions connecting optometrists with medical practices needing temporary shift coverage. Features multi-role workflows, automated Stripe split payouts, DocuSign contracting, and Google Cloud Vision credential verification.',
+      'A high-performance two-sided marketplace connecting optometrists with medical practices needing temporary shift coverage. Features multi-role workflows, automated Stripe split payouts, DocuSign contracting, and Google Cloud Vision credential verification.',
     highlights: [
       'Engineered complete shift/job posting, application, and selection pipelines across 3 distinct roles (optometrist, practice, admin).',
       'Integrated Stripe Connect payments with automated payouts, platform fee splitting, and no-show fee enforcement rules.',
@@ -64,7 +64,7 @@ export const PROJECTS: Project[] = [
       integrations: ['Stripe Escrow & Payouts', 'DocuSign REST API', 'Google Cloud Vision', 'Firebase FCM', 'AWS S3'],
     },
     metrics: [
-      { label: 'Client / Company', value: 'Nyusoft Solutions' },
+      { label: 'Platform Model', value: 'Two-Sided Network' },
       { label: 'Verification', value: 'Vision AI + DocuSign' },
       { label: 'Payments', value: 'Stripe Split Payouts' },
       { label: 'Real-time', value: 'Socket.io + FCM' },
@@ -78,7 +78,7 @@ export const PROJECTS: Project[] = [
     category: 'AI & Platform',
     featured: true,
     description:
-      'An intelligent platform engineered at Nyusoft Solutions to register, verify, and transfer ownership of physical assets (electronics, jewelry, tools) utilizing Gemini 2.5 Flash for multimodal visual recognition, phone-based ownership transfer, and a DNA security-pin protection index.',
+      'An intelligent platform designed to register, verify, and transfer ownership of physical assets (electronics, jewelry, tools) utilizing Gemini 2.5 Flash for multimodal visual recognition, phone-based ownership transfer, and a DNA security-pin protection index.',
     highlights: [
       'Built multimodal item identification powered by Gemini 2.5 Flash to automatically detect brand, model, serial condition, and category from uploaded photos.',
       'Architected secure phone-number-based asset ownership transfer with OTP and biometric authentication.',
@@ -109,7 +109,7 @@ export const PROJECTS: Project[] = [
       integrations: ['Google Gemini 2.5 Flash API', 'Cloudinary Media CDN', 'SMS Gateway for OTP'],
     },
     metrics: [
-      { label: 'Client / Company', value: 'Nyusoft Solutions' },
+      { label: 'Architecture', value: 'Multimodal AI Pipeline' },
       { label: 'AI Vision Model', value: 'Gemini 2.5 Flash' },
       { label: 'Queue Engine', value: 'BullMQ + Redis' },
       { label: 'Auth System', value: 'Biometric + OTP' },
@@ -123,7 +123,7 @@ export const PROJECTS: Project[] = [
     category: 'Monorepo & EdTech',
     featured: true,
     description:
-      'A comprehensive subscription exam preparation platform engineered at Nyusoft Solutions for FCPS medical candidates featuring timed practice, full mock exams, pause/resume state tracking, bulk question ingestion, and real-time discussion forums organized across a 24-module pnpm monorepo.',
+      'A comprehensive subscription exam preparation platform for FCPS medical candidates featuring timed practice, full mock exams, pause/resume state tracking, bulk question ingestion, and real-time discussion forums organized across a 24-module pnpm monorepo.',
     highlights: [
       'Architected a 24-module pnpm monorepo separating auth, question pool engine, mock exam sessions, commerce, and student/admin apps.',
       'Built passwordless OTP authentication (email/SMS) featuring refresh-token rotation and Argon2 password hashing.',
@@ -153,7 +153,7 @@ export const PROJECTS: Project[] = [
       integrations: ['SHA-1 Ingestion Deduplication', 'Docker Local Dev', 'Real-time WebSocket Bus'],
     },
     metrics: [
-      { label: 'Client / Company', value: 'Nyusoft Solutions' },
+      { label: 'Workspace Scope', value: '24 Modules (pnpm)' },
       { label: 'Backend Scope', value: '24 Modules' },
       { label: 'Monorepo', value: 'pnpm Workspace' },
       { label: 'Deduplication', value: 'SHA-1 Hash Filter' },
@@ -172,7 +172,7 @@ export const EXPERIENCES: Experience[] = [
     achievements: [
       'Building and maintaining scalable full-stack web applications using React.js, Node.js, and TypeScript.',
       'Serving as internal AI Vice Captain within our engineering unit, guiding peers on productive AI tool usage (Cursor, Claude, Gemini) and token-efficient coding.',
-      'Delivered featured internal tech talk "STEP UP: Token-Efficient Code Reviews with code-review-graph" with Karan Barodiya, demonstrating persistent codebase graphs (Tree-sitter, MCP), achieving up to 49× token reduction and 8× cost savings in Claude Code reviews.',
+      'Delivered featured internal tech talk "STEP UP: Token-Efficient Code Reviews with code-review-graph", demonstrating persistent codebase graphs (Tree-sitter, MCP), achieving up to 49× token reduction and 8× cost savings in Claude Code reviews.',
       'Practicing structured, deliberate AI-assisted development rather than relying on AI output blindly, keeping all generated code modular, reviewable, and maintainable.',
       'Sharing modern IDE workflows and practical guidelines as part of our internal engineering continuous learning initiative.',
     ],
@@ -254,7 +254,7 @@ export const CERTIFICATIONS: Certification[] = [
     category: 'workshop',
     badge: 'Speaker & Tech Lead',
     description:
-      'Co-presented with Karan Barodiya on leveraging Tree-sitter & Model Context Protocol (MCP) to construct persistent codebase graphs, achieving up to 49× token reduction and 8× cost savings in Claude Code reviews.',
+      'Delivered technical session on leveraging Tree-sitter & Model Context Protocol (MCP) to construct persistent codebase graphs, achieving up to 49× token reduction and 8× cost savings in Claude Code reviews.',
   },
   {
     title: 'Global Job Readiness Program (Foundation Level)',
@@ -367,7 +367,7 @@ export const AI_VICE_CAPTAIN_INITIATIVES: AIWorkflowFeature[] = [
   {
     title: 'Internal Engineering Tech Talks & Workshops',
     description:
-      'Co-presented "STEP UP: Token-Efficient Code Reviews with code-review-graph" with Karan Barodiya at Nyusoft, showing how Tree-sitter and MCP build persistent codebase graphs to slash token consumption by up to 49× in Claude Code reviews.',
+      'Delivered "STEP UP: Token-Efficient Code Reviews with code-review-graph", demonstrating how Tree-sitter and MCP build persistent codebase graphs to slash token consumption by up to 49× in Claude Code reviews.',
     impact: 'Up to 49× token reduction & 8× cost savings demonstrated',
     badge: 'Speaker & Lead',
   },
